@@ -1,0 +1,253 @@
+*{
+   padding: 0%;
+   margin: 0%;    
+}
+body{
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(220, 236, 250);
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.Phone_body{
+    position: relative;
+    width: 250px;
+    height: 410px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 3px 5px 10px 0px rgb(121, 121, 121) ;
+}
+ 
+.HomePage{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+}
+.pic{
+    position: relative;
+    width: 230px;
+    margin-top: 10px;
+}
+.HomePage h2{
+    position: relative;
+    margin-top: 5px;
+    color: rgb(52, 138, 196);
+}
+.HomePage .Content{
+    position: relative;
+    width: 80%;
+    height: 170px;
+    background-color: rgb(31, 126, 189);
+    left: 10%;
+    border-radius: 19px;
+    margin-top: 14px;
+    color: white;
+}
+.Content h1{
+    position: relative;
+    font-size: 20px;
+    top: 20px;
+}
+.Content p{
+    font-size: 12px;
+    margin-top: 30px;
+    width: 80%;
+    margin-left: 10%;
+}
+.nextBtn
+{
+   position: relative;
+   padding: 2% 3%;
+   border-radius: 100%;
+   border: 6px solid white;
+   top: 40px;
+   background-color: rgb(31, 126, 189); 
+   color: white;
+}
+.nextBtn::after{
+    content: ' ';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(31, 126, 189);  
+    left: -23px;
+    top: -3.5px;
+    border-bottom-right-radius: 19px;
+    box-shadow: 2px 8px 2px 0px white;
+}
+.nextBtn::before{
+    content: ' ';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(31, 126, 189);  
+    left: 29px; 
+    top: -3.4px;
+    border-bottom-left-radius: 19px;
+    box-shadow: -2px 8px 2px 0px white;
+   
+}
+.nextBtn:hover{
+    background-color: rgb(42, 150, 221);   
+}
+.nextBtn:active{
+    background-color: rgb(19, 86, 131);  
+
+}
+
+/* Home  */
+.homepage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243, 243, 243);
+    top: 0px;
+    overflow: auto;
+    left: 100%;
+    visibility: hidden;
+    transition: 1s;
+
+}
+.homepage::-webkit-scrollbar{
+    width: 0px;
+}
+.homepage .header{
+    position: fixed;
+    background-color: rgb(243, 243, 243);
+    z-index: 211;
+    text-align: left;
+    padding: 2%;  
+    width: 230px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    display: flex;
+}
+.menuBar{
+    position: relative;
+    top: 10px;
+    left: 5px;                 
+    padding: 2%;      
+
+}
+.searchBox{
+    position: relative;
+    margin-top: 15px;
+    left: 17px;
+}
+.header a{
+    color: rgb(31, 126, 189);  
+   
+}
+.search{
+    position: relative;
+    border: 0px; 
+    border-bottom: 1px solid rgb(192, 192, 192);
+    background-color: rgb(243, 243, 243); 
+    height: 20px;
+    font-size: 13px;
+    text-indent: 10px;
+}
+.searchBtn{
+    position: relative;
+    top: 3px;
+}
+.Homecontent{
+    position: relative;
+    width: 85%;
+    height: 100%;
+    left: 7.5%;
+    margin-top: 60px;
+    text-align: start; 
+}
+.Homecontent::-webkit-scrollbar{
+    width: 0px;
+}
+.Homecontent h2{
+    font-size: 18px;
+    color: rgb(31, 126, 189);  
+
+}
+.lists{
+    position: relative;
+    height: auto;
+    display: block;
+}
+.list{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 14px;
+    margin-top: 12px;
+    box-shadow: 0px 0px 6px 0px rgb(168, 168, 168);
+}
+.list .time_date{
+    position: relative;
+    padding: 2%;
+}
+.date , .time{
+    font-size: 10px;
+    font-style: normal;
+    margin-left: 5px;
+    left: 8px;
+}
+.time{
+    font-size: 9px;
+}
+.fa-clock{
+    font-size: 11px;
+    color: rgb(99, 99, 99);
+    margin-left: 10px;
+}
+.text{
+    position: relative;
+    padding: 0%; 
+    font-size: 9px;
+    margin-top:3px;
+    width: 90%;
+    left: 5%;
+
+}
+ 
+.text strong{
+    font-size: 13px;
+    font-style: normal; 
+    padding-right:2%;
+}
+.plusBtn{
+    position: fixed;
+    padding: 2% 3%;
+    border-radius: 100%;
+    background-color: rgb(31, 126, 189);
+    color: white;
+    box-shadow: 0px 0px 6px 0px gray;
+    z-index: 111;
+    top: 380px;
+    left: 65%;
+}
+
+.plusBtn:hover{
+    background: rgb(43, 152, 224);
+}
+
+.plusBtn:active{
+    background: rgb(34, 114, 168);
+}
+#more{
+    position: relative;
+    float: right;
+    right: 4%;
+    color: rgb(114, 114, 114);
+    top: 5px;
+    font-size: 13px;
+}
